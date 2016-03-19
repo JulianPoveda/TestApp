@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/app_imagen"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/image_splash"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <TextView
+            android:id="@+id/app_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="@string/entry_nombre"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/size_entry_nombre"
+            android:lines="1"
+            android:textColor="@color/verdeOscuro"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/app_artista"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/entry_artista"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/size_entry_item"
+            android:lines="1"
+            android:textColor="@color/azul"/>
+
+        <TextView
+            android:id="@+id/app_precio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/entry_precio"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/size_entry_item"
+            android:lines="1"
+            android:textColor="@color/azul"/>
+
+        <TextView
+            android:id="@+id/app_derechos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/entry_derechos"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/size_entry_item"
+            android:lines="1"
+            android:textColor="@color/azul"/>
+    </LinearLayout>
+
+</LinearLayout>
